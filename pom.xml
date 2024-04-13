@@ -11,4 +11,16 @@
         <maven.compiler.target>14</maven.compiler.target>
         <sonar.host.url>http://172.190.105.20:9000/</sonar.host.url>
     </properties>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexusRepo</id>
+            <url>http://http://40.124.122.61:8081/repository/sample-snapshots</url>
+        </snapshotRepository>
+
+        <repository>
+            <id>nexusRepo</id>
+            <url>http://http://40.124.122.61:8081/repository/sample-release</url>
+        </repository>        
+    </distributionManagement>
 </project>
